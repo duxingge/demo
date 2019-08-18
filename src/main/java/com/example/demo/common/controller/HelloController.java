@@ -1,10 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.common.controller;
 
-import com.example.demo.domain.Boss;
-import com.example.demo.domain.Car;
-import com.example.demo.service.ScoreService;
+import com.example.demo.common.domain.Boss;
+import com.example.demo.common.domain.Car;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.web.bind.annotation.RequestMapping;

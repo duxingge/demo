@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.example.demo.common.domain;
 
 public class Boss {
     private int value = 2;

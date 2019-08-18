@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.example.demo.common.domain;
 
 import java.beans.PropertyEditorSupport;
 

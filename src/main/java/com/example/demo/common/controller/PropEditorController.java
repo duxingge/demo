@@ -1,12 +1,14 @@
-package com.example.demo.controller;
+package com.example.demo.common.controller;
 
-import com.example.demo.domain.Boss;
+import com.example.demo.common.domain.Boss;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.lang.reflect.InvocationHandler;
 
 /**
  * 属性编辑器测试Controller
@@ -22,6 +24,7 @@ public class PropEditorController {
         Resource resource = p.getResource("classpath:testBeanxml.xml");
         reader.loadBeanDefinitions(resource);
         Boss boss = factory.getBean(Boss.class);
+        InvocationHandler.class.getInterfaces();
         return boss.say();
     }
 }

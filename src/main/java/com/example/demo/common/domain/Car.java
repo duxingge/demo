@@ -1,6 +1,6 @@
-package com.example.demo.domain;
+package com.example.demo.common.domain;
 
-public class Car {
+public class Car implements Cloneable{
     private String name;
 
     public String getName() {
